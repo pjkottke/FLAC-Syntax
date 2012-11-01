@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>dat</string>
+		<string>fis</string>
+		<string>fin</string>
+	</array>
+	<key>name</key>
+	<string>FLAC</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>support.function.source.flac</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>variable.parameter.source.flac</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>FISH functions</string>
+			<key>match</key>
+			<string>\b(def(|ine)\s([A-Za-z0-9\$_]*)|command|end|endcommand|echo|config)\b</string>
+			<key>name</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>support.function.source.flac</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>variable.parameter.source.flac</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>FISH functions</string>
+			<key>match</key>
+			<string>\b(call\s([A-Za-z0-9\$_\.]*))\b</string>
+			<key>name</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Comments</string>
+			<key>match</key>
+			<string>;+.*$</string>
+			<key>name</key>
+			<string>comment.line.source.flac</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Highlight FLAC words.</string>
+			<key>match</key>
+			<string>\b(from|to|region|sxx|syy|szz|xdisp|ydisp|x|y|and|or|shear_mod|bulk_mod|table|abs|ssi|z_group)(?=\()\b</string>
+			<key>name</key>
+			<string>support.function.source.flac</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Highlight FLAC commands.</string>
+			<key>match</key>
+			<string>\b(model|prop|group|loop|while|endloop|and|or|endif|end|endcase|caseof|if|else|save|fix|set|rat|step|solve|gen|water|apply|table|grid|pr|print|pl pen|ini|history|from|to)\b</string>
+			<key>name</key>
+			<string>keyword.source.flac</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Highlight FLAC words.</string>
+			<key>match</key>
+			<string>\bthen\b(?=\s*(;.*)$)</string>
+			<key>name</key>
+			<string>keyword.source.flac</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Highlight FLAC variables.</string>
+			<key>match</key>
+			<string>\b(density|bulk|shear|fri|c|jcoh|jfri|jang|ubi|mo|mohr|ho|hoek|el|f|hbs|hba|hbmb|hbsigci|on|off|ex|x|i|y|j|z|k|gravity|d|null|remove|long|disp|xdis|ydis|syy|xvel|yvel)\b</string>
+			<key>name</key>
+			<string>variable.parameter.source.flac</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>String.</string>
+			<key>match</key>
+			<string>'.*'</string>
+			<key>name</key>
+			<string>string.quoted.single.source.flac</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>String.</string>
+			<key>match</key>
+			<string>".*"</string>
+			<key>name</key>
+			<string>string.quoted.single.source.flac</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>FLAC math operators</string>
+			<key>match</key>
+			<string>&lt;\=|&gt;\=|\=\=|&lt;|&gt;|\!\=|\=|\*|\\|\-|\+</string>
+			<key>name</key>
+			<string>keyword.operator.source.flac</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>constant.numeric.source.flac</string>
+			<key>comment</key>
+			<string>Highlight numbers.</string>
+			<key>match</key>
+			<string>-?\b(([1-9]+[0-9]*)|0)\.?([0-9])*e?[0-9]*\b\.?</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.flac</string>
+	<key>uuid</key>
+	<string>658ff636-668e-4ad1-8b45-5a256e0aac28</string>
+</dict>
+</plist>

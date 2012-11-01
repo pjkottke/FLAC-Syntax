@@ -1,0 +1,20 @@
+{ "name": "FLAC",
+  "scopeName": "source.flac",
+  "fileTypes": ["dat", "fis", "fin"],
+  "patterns": [
+    { "match": "(elif|else|except|finally|for|if|try|while|with|break|continue|pass|raise|return|yield)",
+      "name": "keyword.source.flac",
+      "comment": "Highlight FLAC words."},
+    { "match": "[0-9]",
+      "name": "constant.source.flac",
+      "comment": "Highlight numbers."},
+      { "match": "\\$([A-Za-z][A-Za-z0-9_]+)",
+  "name": "keyword.ssraw",
+  "captures": {
+      "1": { "name": "constant.numeric.ssraw" }
+   },
+  "comment": "Variables like $PARAM1, $TM_SELECTION..."
+}
+  ],
+  "uuid": "658ff636-668e-4ad1-8b45-5a256e0aac28"
+}
