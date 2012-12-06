@@ -74,7 +74,7 @@
 			<key>comment</key>
 			<string>Highlight FLAC commands.</string>
 			<key>match</key>
-			<string>\b(model|prop|group|loop|while|endloop|and|or|mark|unmark|line|arc|endif|end|endcase|caseof|if|else|save|fix|set|rat|step|solve|gen|water|apply|table|grid|pr|print|pl pen|ini|history|from|to)\b</string>
+			<string>\b(model|prop|group|region|loop|while|endloop|and|or|mark|unmark|line|arc|endif|end|endcase|caseof|if|then|else|save|res|fix|set|rat|step|solve|gen|water|apply|table|grid|pr|print|pl pen|ini|history|from|to)\b</string>
 			<key>name</key>
 			<string>keyword.source.flac</string>
 		</dict>
